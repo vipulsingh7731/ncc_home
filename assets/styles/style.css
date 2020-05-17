@@ -45,14 +45,6 @@ nav a img {
   font-weight: 100;
 }
 
-hr {
-  border: 0;
-  width: 80%;
-  height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
 .about-box {
   /* border-radius: 1rem; */
   padding-bottom: 2rem;
@@ -68,6 +60,19 @@ hr {
   text-shadow: 2px 0px 0 #7A7A7A;
   color: #271506;
   font-family: 'Raleway', sans-serif;
+}
+
+.about-box hr {
+  border: 0;
+  width: 80%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.about-box iframe {
+  width: 40vmax;
+  height: 46vmin;
 }
 
 .about-box p {
