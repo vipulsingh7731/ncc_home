@@ -139,25 +139,52 @@ hr {
 
 #blog {
     margin-top: 1rem;
-    border: 2px solid blue;
     .heading{
         h1{
-            color: white;
-            background-color: blue;
+        background: #0e8dbc;
+        color: #FFFFFF;
+        text-shadow: 3px 0px 1px #23c4c9 ;
+        border-radius: 40px;
+        width: 100%;
         }
+        
+        
     }
     .row{
-
-        h1 {
-            font-size: 3vw;
-        }
+        border: 2px solid #83C5BE;
+        border-radius: 20px;
+        background-color: #EDF6F9;
+        margin-bottom: 0.5rem;
         img{
+            border-radius: 10px;
             width: 100%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+
         }
-        @media(min-width:992) {
+        h1 {
+            //below 992px
+            font-size: 2rem;
+        }
+        h4 {
+            //below 992px
+            font-size: 0.8rem;
+            font-weight: 300;
+
+        }
+        @media(min-width:992px) {
+        
             img{
                 width: 20vw;
                 float: left;
+            }
+            h1 {
+                font-size: 3.7rem;
+            }
+            h4 {
+                font-size: 1.3rem;
+                font-weight: 300;
+    
             }
         }
     }

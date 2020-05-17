@@ -140,26 +140,50 @@ hr {
 
 #blog {
   margin-top: 1rem;
-  border: 2px solid blue;
 }
 
 #blog .heading h1 {
-  color: white;
-  background-color: blue;
-}
-
-#blog .row h1 {
-  font-size: 3vw;
-}
-
-#blog .row img {
+  background: #0e8dbc;
+  color: #FFFFFF;
+  text-shadow: 3px 0px 1px #23c4c9;
+  border-radius: 40px;
   width: 100%;
 }
 
-@media (min-width: 992) {
+#blog .row {
+  border: 2px solid #83C5BE;
+  border-radius: 20px;
+  background-color: #EDF6F9;
+  margin-bottom: 0.5rem;
+}
+
+#blog .row img {
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#blog .row h1 {
+  font-size: 2rem;
+}
+
+#blog .row h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+@media (min-width: 992px) {
   #blog .row img {
     width: 20vw;
     float: left;
+  }
+  #blog .row h1 {
+    font-size: 3.7rem;
+  }
+  #blog .row h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 }
 
