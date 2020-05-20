@@ -1,1 +1,3 @@
-console.log("hello")
+AOS.init({
+    disable: "mobile"
+});

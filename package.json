@@ -1,0 +1,22 @@
+{
+  "name": "ncc_homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vipulsingh7731/ncc_home.git"
+  },
+  "author": "vipul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vipulsingh7731/ncc_home/issues"
+  },
+  "homepage": "https://github.com/vipulsingh7731/ncc_home#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

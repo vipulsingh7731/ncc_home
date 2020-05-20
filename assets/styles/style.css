@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Open+Sans:wght@300&display=swap");
 body {
@@ -289,7 +290,7 @@ nav a img {
   background-color: #292929;
   width: 100%;
   color: #fff;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .footer .col-2 img {
@@ -298,14 +299,10 @@ nav a img {
   margin-top: 53px;
 }
 
-.footer p ~ a {
-  margin: 10px -5px;
-}
-
 .footer iframe {
-  height: 10vmax;
+  height: 15vmax;
   width: 80vmin;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .footer h2 {
@@ -314,6 +311,17 @@ nav a img {
 
 .footer p {
   font-size: 1vmax;
+}
+
+.footer p ~ a img {
+  margin: 20px 2px;
+}
+
+.footer p ~ a img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
 }
 
 @media (min-width: 750px) {
