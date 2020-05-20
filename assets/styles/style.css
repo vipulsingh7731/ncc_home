@@ -1,19 +1,28 @@
-/* NAvbar Styles */
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-nav {
-  background-color: #271506;
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Open+Sans:wght@300&display=swap");
+body {
+  font-family: 'DM Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* NAvbar Styles */
+.navbar {
+  background-color: #202020;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar-dark .navbar-brand {
   color: #fff;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+  background-color: #141414;
   color: #ebebeb;
-  background-color: #555555;
-  /* opacity: 0.8; */
   border-radius: 3px;
 }
 
@@ -27,7 +36,7 @@ nav a img {
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #ffffff;
-  background-color: #555555;
+  background-color: #141414;
   opacity: 1;
   border-radius: 3px;
 }
@@ -37,7 +46,7 @@ nav a img {
 }
 
 .carousel-height-ratio {
-  height: 56.25vw;
+  height: 35vw;
 }
 
 .carousel-caption h5 {
@@ -52,12 +61,14 @@ nav a img {
 
 .about-box img {
   border-radius: 0.5rem;
+  max-height: 450px;
+  max-width: 300px;
 }
 
 .about-box h1 {
   margin-top: 1rem;
   font-size: 3rem;
-  text-shadow: 2px 0px 0 #7A7A7A;
+  text-shadow: 3px 1px 3px #7A7A7A;
   color: #271506;
   font-family: 'Raleway', sans-serif;
 }
@@ -91,6 +102,7 @@ nav a img {
 
 #table {
   border: whitesmoke solid 5vw;
+  border-width: 5vw;
   color: white;
 }
 
@@ -144,7 +156,7 @@ nav a img {
 }
 
 #blog {
-  margin-top: 1rem;
+  margin: 2rem auto;
 }
 
 #blog .heading h1 {
@@ -159,7 +171,7 @@ nav a img {
   border: 2px solid #83C5BE;
   border-radius: 20px;
   background-color: #EDF6F9;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #blog .row img {
@@ -180,7 +192,6 @@ nav a img {
 
 @media (min-width: 992px) {
   #blog .row img {
-    width: 20vw;
     float: left;
   }
   #blog .row h1 {
@@ -189,6 +200,129 @@ nav a img {
   #blog .row h4 {
     font-size: 1.3rem;
     font-weight: 300;
+  }
+}
+
+.history {
+  font-family: 'DM Mono', monospace;
+  background-image: url(../img/pattern.jpg);
+  margin: 0;
+  padding: 0 4em;
+}
+
+.history main {
+  min-width: 300px;
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.history main h1 {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-weight: 900;
+  color: #0c0c0c;
+  text-shadow: #cbcbcb 3px -1px 0px;
+}
+
+.history main p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  -o-border-image: linear-gradient(90deg, #ff112d 19%, #2914d4 69%);
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(19%, #ff112d), color-stop(69%, #2914d4));
+     border-image: linear-gradient(90deg, #ff112d 19%, #2914d4 69%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: #34435E;
+}
+
+.history main p .year {
+  display: block;
+  text-align: center;
+  color: #2e0dc5;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.history main p .info {
+  background-color: #fff;
+  padding: 0.2rem 1rem;
+}
+
+.history main p:nth-child(odd) {
+  border-right: 3px solid;
+}
+
+.history main p:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+.history main p:nth-child(even) {
+  border-left: 3px solid;
+}
+
+.history main p:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+.history main p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.history main p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 3px solid;
+}
+
+.footer {
+  background-color: #292929;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.footer .col-2 img {
+  display: block;
+  max-width: 10vmin;
+  margin-top: 53px;
+}
+
+.footer p ~ a {
+  margin: 10px -5px;
+}
+
+.footer iframe {
+  height: 10vmax;
+  width: 80vmin;
+  margin-bottom: 20px;
+}
+
+.footer h2 {
+  font-size: 2.4vmax;
+}
+
+.footer p {
+  font-size: 1vmax;
+}
+
+@media (min-width: 750px) {
+  .footer img {
+    max-width: 13vmin;
+  }
+  .footer iframe {
+    height: 80%;
+    width: 80%;
   }
 }
 
